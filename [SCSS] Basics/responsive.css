@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: rgb(249, 209, 215);
+}
+@media (min-width: 768px) {
+  body {
+    background-color: pink;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: rgb(255, 149, 167);
+  }
+}
+@media (min-width: 1280px) {
+  body {
+    background-color: rgb(247, 92, 118);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

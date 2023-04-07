@@ -1,0 +1,70 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+body header .loginBox .login, body header .menu button {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+body {
+  margin: 0;
+  color: #222222;
+  font-family: "Pretendard";
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  max-width: 1280px;
+  margin: auto;
+}
+body header .menu .logo {
+  width: 108px;
+}
+body header .menu button {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+  border: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+body header .menu button:nth-child(2) {
+  margin-left: 44px;
+}
+@media (min-width: 1280px) {
+  body header .menu button {
+    display: inline-block;
+  }
+}
+body header .loginBox {
+  display: flex;
+  align-items: center;
+}
+body header .loginBox .login {
+  display: inline-block;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+@media (min-width: 1280px) {
+  body header .loginBox .login {
+    color: #737373;
+    font-size: 16px;
+    border: 0px;
+    padding: 0px;
+  }
+}
+body header .loginBox .ellipsis {
+  width: 24px;
+  margin-left: 16px;
+}
+@media (min-width: 1280px) {
+  body header .loginBox .ellipsis {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

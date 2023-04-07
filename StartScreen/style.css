@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+* {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  color: rgb(22, 22, 22);
+}
+
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .timeAmPm {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+}
+main .timeAmPm .time {
+  font-size: 60px;
+  padding-left: 20px;
+}
+main .timeAmPm .ampm {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+main .date {
+  font-size: 30px;
+  font-weight: 500;
+  border: 0px;
+  margin-top: 20px;
+  color: rgb(243, 251, 255);
+}
+main .quotes {
+  position: relative;
+  font-size: 60px;
+}
+main .quotes .quotesAddBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+main .newQuotes {
+  display: none;
+}
+main .search .searchLogo {
+  width: 32px;
+  height: 32px;
+  animation: spin 10s linear infinite;
+}
+main .searchResult {
+  display: none;
+}
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+}
+main .nft img {
+  width: 200px;
+  height: 200px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .nft .nftHover button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -8px;
+  border-radius: 9999px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .nftView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 24px;
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

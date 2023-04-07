@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+header {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
+}
+
+img {
+  width: 108px;
+}
+
+button {
+  background-color: white;
+  border: 0;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: none;
+}
+
+.login {
+  display: inline-block;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 9999px;
+  font-size: 14px;
+  padding: 8px 16px; /*순서_상하,좌우 / 4개일 경우 시계방향*/
+}
+
+.firstBtn {
+  margin-left: 80px;
+}
+
+.loginBox {
+  display: flex;
+}
+
+.ellipsis {
+  width: 24px;
+  margin-left: 16px;
+  /* align-items: center; */
+}
+
+@media (min-width: 1024px) {
+  button {
+    display: inline-block;
+  }
+  .ellipsis {
+    display: none;
+  }
+  .login {
+    color: #737373;
+    font-size: 16px;
+    border: 0;
+    padding: 0;
+  }
+}

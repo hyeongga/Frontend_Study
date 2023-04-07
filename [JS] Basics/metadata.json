@@ -1,0 +1,15 @@
+{
+  "name": "doddle",
+  "description": "harmony of shapes. i want to be art!",
+  "image": "https://경로",
+  "attributes": [
+    {
+      "trait_type": "BACKGROUND",
+      "value": "White"
+    },
+    {
+      "trait_type": "Composition Color",
+      "value": "#7092be"
+    }
+  ]
+}

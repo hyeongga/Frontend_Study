@@ -1,0 +1,19 @@
+$tablet: 768px;
+$laptop: 1024px;
+$pc: 1280px;
+
+@mixin responsive($device) {
+  @if $device == "tablet" {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $device == "laptop" {
+    @media (min-width: $laptop) {
+      @content;
+    }
+  } @else if $device == "pc" {
+    @media (min-width: $pc) {
+      @content;
+    }
+  }
+}

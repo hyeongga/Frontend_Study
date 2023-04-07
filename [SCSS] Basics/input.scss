@@ -1,0 +1,16 @@
+@import "button"; /*import 대신 @use 사용시, 파일명.접근명으로 사용(color.sky)*/
+
+.info {
+  @extend %btnStyle;
+  background-color: darkgray;
+}
+
+.alert {
+  @extend %btnStyle;
+  background-color: darkred;
+}
+
+.success {
+  @extend %btnStyle;
+  background-color: darkgreen;
+}

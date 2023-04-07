@@ -1,0 +1,4 @@
+# git hub에 업로드되지 말아야 할 파일
+# ex1. 대용량 dependency 패키지들
+# ex2. 실행파일들
+# ex3. 보안에 민감한 것들 (private key, password 등)

@@ -1,0 +1,391 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+/*여기까지 함*/
+body {
+  margin: 0;
+  color: #222222;
+  font-family: "Pretendard";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.logo {
+  width: 108px;
+}
+
+button {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.menu button {
+  display: none;
+  border: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.menu button:nth-child(2) {
+  margin-left: 44px;
+}
+
+.loginBox {
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  display: inline-block;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.ellipsis {
+  width: 24px;
+  margin-left: 16px;
+}
+
+@media (min-width: 1024px) {
+  .menu button {
+    display: inline-block;
+  }
+  .login {
+    color: #737373;
+    font-size: 16px;
+    border: 0px;
+    padding: 0px;
+  }
+  .ellipsis {
+    display: none;
+  }
+}
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.bannerMessage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  margin-left: 196px;
+}
+
+.bannerTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.contents {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 72px;
+}
+
+.contentsTitle {
+  color: #e67800;
+  font-weight: 600;
+}
+
+.contentsDescription {
+  margin-top: 16px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.contentsDetail {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentsDetail div:nth-child(1) {
+  color: #737373;
+}
+
+.contentsGrid {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .contentsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .contentsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .contentsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.contentsCard {
+  width: 290px;
+}
+
+.contentsCardImg {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.contentsCardImg img {
+  width: 290px;
+  transition: all 0.5s;
+}
+
+.contentsCardImg img:hover {
+  transform: scale(1.1);
+}
+
+.contentsCardComplete {
+  display: inline;
+  border: 1px solid #059669;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #059669;
+}
+
+.contentsCardIng {
+  display: inline;
+  border: 1px solid #1d4ed8;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.contentsCardEnd {
+  display: inline;
+  border: 1px solid #3f3f46;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3f3f46;
+}
+
+.contentsCardTitle {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contentsCardDescription {
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.contentsCardDate {
+  color: #a3a3a3;
+  margin-top: 16px;
+}
+
+.alarm {
+  position: relative;
+  margin-top: 96px;
+}
+
+.alarm img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.alarmMessage {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  margin-left: 196px;
+}
+
+.alarmTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #072c56;
+  margin-bottom: 24px;
+}
+
+.alarmDescription {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.alarmDetail {
+  font-size: 14px;
+  color: #737373;
+  font-weight: 600;
+}
+
+.introduce {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: 72px;
+}
+
+.introduceTitle {
+  color: #e67800;
+  font-weight: 600;
+}
+
+.introduceDescription {
+  margin-top: 16px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.introduceDetail {
+  margin-top: 16px;
+  color: #737373;
+}
+
+.introduceGrid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  justify-items: center;
+}
+
+@media (min-width: 1024px) {
+  .introduceGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.introduceCard {
+  position: relative;
+}
+
+.introduceCard img {
+  width: 600px;
+}
+
+.introduceCardMessage {
+  position: absolute;
+  top: 0;
+  font-size: 18px;
+  padding: 40px;
+}
+
+.introduceCardTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.introduceCardDescription {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.introduceCardDetail {
+  font-size: 14px;
+  color: #737373;
+  font-weight: 600;
+}
+
+.sitemap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: auto;
+  padding-top: 32px;
+  border-top: 1px solid #d4d4d4;
+  margin-top: 120px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.sitemapLogo {
+  align-self: start;
+}
+
+.sitemapMenu {
+  display: flex;
+}
+
+.sitemapCompany {
+  margin-left: 112px;
+}
+
+.sitemapTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: #737373;
+  margin-bottom: 20px;
+}
+
+.sitemapButton {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+footer {
+  max-width: 1280px;
+  margin: auto;
+  font-size: 12px;
+  color: #737373;
+  padding-bottom: 24px;
+}
+
+.blockchainSchool {
+  display: flex;
+  margin-top: 16px;
+}
+
+.blockchainSchool div {
+  background-color: deeppink;
+  color: whitesmoke;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 9999px;
+  margin-right: 12px;
+  margin-bottom: 24px;
+}
+
+.footerInfo {
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+/*# sourceMappingURL=techit.css.map */

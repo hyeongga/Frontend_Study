@@ -1,0 +1,19 @@
+$primary: #222222;
+$secondary: #737373; /*여기까지 함*/
+$techitOrange: #e67800;
+$complete: #059669;
+$ing: #1d4ed8;
+$end: #3f3f46;
+$border: #d4d4d4;
+
+%maxWidth {
+  max-width: 1280px;
+  margin: auto;
+}
+
+@mixin responsive($device) {
+  @if $device == "oc" {
+    @media (min-width: $pc) {
+    }
+  }
+}

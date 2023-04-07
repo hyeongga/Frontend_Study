@@ -1,0 +1,28 @@
+.container {
+  background-color: bisque;
+  display: flex;
+  /*flex-direction: column;*/
+  min-height: 100vh;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+/* flex:
+- flex-direction : 기본값은 row
+- 하위<div>에도 flex적용 됨
+- vh는 %의미
+- align-items : 주 정렬 방향(main axis)과 교차되는 방향(cross axis)으로의 정렬*/
+
+.box {
+  width: 200px;
+  height: 20px;
+}
+
+.box:nth-child(1) {
+  background-color: pink;
+}
+.box:nth-child(2) {
+  background-color: rgb(197, 54, 78);
+}
+.box:nth-child(3) {
+  background-color: rgb(163, 53, 163);
+}

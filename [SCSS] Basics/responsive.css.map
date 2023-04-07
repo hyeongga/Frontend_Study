@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "inputRes.scss",
+    "responsive.scss"
+  ],
+  "names": [],
+  "mappings": "AAEA;EACE;EAEA;;ACCE;EDJJ;IAMI;;;ACEA;EDRJ;IASI;;;ACGA;EDZJ;IAYI",
+  "file": "style.css"
+}

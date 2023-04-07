@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.success, .alert, .info {
+  color: whitesmoke;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/*import 대신 @use 사용시, 파일명.접근명으로 사용(color.sky)*/
+.info {
+  background-color: darkgray;
+}
+
+.alert {
+  background-color: darkred;
+}
+
+.success {
+  background-color: darkgreen;
+}
+
+/*# sourceMappingURL=style.css.map */
